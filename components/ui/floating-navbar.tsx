@@ -29,16 +29,13 @@ export const FloatingNav = ({
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
 
-      if (scrollYProgress.get() < 0.05) {
+      if (scrollYProgress.get() < 0.05 || direction < 0) {
         // also set true for the initial state
         setVisible(true);
-      } else {
-        if (direction < 0) {
-          setVisible(true);
-        } else {
+      }  else {
           setVisible(false);
         }
-      }
+      
     }
   });
 
