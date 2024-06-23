@@ -84,7 +84,7 @@ export const AnimatedTooltip = ({
             src={item.image}
             alt={item.name}
             style={{ marginLeft: "100px" }}
-            className="ml-2 md:ml-5 lg:ml-10 w-12 h-auto object-coverobject-top rounded-full border-2 group-hover:scale-105 group-hover:z-30 border-green relative transition duration-500"
+            className="ml-2 md:ml-5 lg:ml-10 object-cover object-top rounded-full border-2 group-hover:scale-105 group-hover:z-30 border-green relative transition duration-500"
           />
         </div>
       ))}
