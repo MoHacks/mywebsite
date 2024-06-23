@@ -7,9 +7,22 @@ import { MagicButton } from "./ui/MagicButton";
 import { VscRocket } from "react-icons/vsc";
 import { Globe } from './ui/globeConfiguration';
 import canada from './canada.png';
+import {AnimatedTooltip}  from './ui/animated-tooltip';
+
+
+  // Define the items array
+const tooltipItems = [
+  {
+    id: 1,
+    name: 'Mohamad Alkhani',
+    designation: 'Software Engineer',
+    image: canada.src
+  }
+];
 
 const Hero = () => {
   return (
+
     <div className="pb-20 pt-36"> 
 
         <div>
@@ -50,12 +63,17 @@ const Hero = () => {
             <TextGenerateEffect
               words={`Hello! I'm John Doe, a Full Stack Software Developer from Canada that is looking for new opportunities!`} />
           </h1>
-
-          <img 
-            src={canada.src} 
-            alt="Canada Flag" 
-            className="ml-4 w-10 h-auto"
+            
+          
+          <AnimatedTooltip items={tooltipItems}>
+            <img 
+            src={canada.src}
+            // className="margin-left-100"
+            className="ml-2 md:ml-5 lg:ml-10 w-12 h-auto"
+            alt="Canada Flag"
           />
+          </AnimatedTooltip>
+
         </div>
           <a href='#Projects'>
             <MagicButton
