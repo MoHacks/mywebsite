@@ -9,7 +9,7 @@ export function MyProjects() {
   return (
     <section id="projects">
       <div>
-        <h1 className="heading text-purple">
+        <h1 className="heading text-purple pt-10">
           Some of My Projects
         </h1>
         <div className="py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8 text-stronggreen text-center">
