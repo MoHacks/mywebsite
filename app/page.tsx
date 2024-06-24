@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { navItems } from '../data/index';
 // import MyProjects from '../components/MyProjects';
+import MyWorkExperience from "@/components/MyWorkExperience";
 import React from "react";
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <div className="max-w-7xl w-full ">
         <FloatingNav navItems={navItems} />
         <Hero />
+        <MyWorkExperience />
         {/* <MyProjects /> */}
         <Grid />
         <h1>Hello, Portfolio!</h1>

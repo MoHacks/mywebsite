@@ -59,22 +59,12 @@ const Hero = () => {
             
           </h2> */}
         <div className="flex items-center justify-right w-full">
-          <h1 className='text-purple text-center md:tracking-wider mb-4 md:text-large lg: text-3xl'>
+          <h1 className='text-purple text-center md:tracking-wider mb-2 md:text-large lg: text-3xl'>
             <TextGenerateEffect
               words={`Hello! I'm Mohamad Alkhani, a Full Stack Software Developer from Canada that is looking for new opportunities!`} />
           </h1>
-            
           
-          <AnimatedTooltip items={tooltipItems}>
-            <img 
-            src={canada.src}
-            // className="margin-left-100"
-            className="ml-2 md:ml-5 lg:ml-10 w-50 h-auto"
-            alt="Canada Flag"
-            width="10px"
-          />
-          </AnimatedTooltip>
-
+          <AnimatedTooltip items={tooltipItems}  /> 
         </div>
           <a href='#Projects'>
             <MagicButton
