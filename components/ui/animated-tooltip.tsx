@@ -79,8 +79,8 @@ export const AnimatedTooltip = ({
           </AnimatePresence>
           <Image
             onMouseMove={handleMouseMove}
-            height={200}
-            width={500}
+            height={300}
+            width={800}
             src={item.image}
             alt={item.name}
             style={{ marginLeft: "100px" }}

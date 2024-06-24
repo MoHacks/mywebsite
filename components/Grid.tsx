@@ -4,7 +4,6 @@ import { gridItems } from '../data/index';
 
 const Grid = () => {
   return (
-    <section id="about">
       <BentoGrid>
         {
             gridItems.map((item) => (
@@ -22,7 +21,6 @@ const Grid = () => {
             ))}
         
       </BentoGrid>
-    </section>
   )
 }
 

@@ -14,7 +14,7 @@ import {AnimatedTooltip}  from './ui/animated-tooltip';
 const tooltipItems = [
   {
     id: 1,
-    name: 'Mohamad Alkhani',
+    name: 'John Doe',
     designation: 'Software Engineer',
     image: canada.src
   }
@@ -61,12 +61,12 @@ const Hero = () => {
         <div className="flex items-center justify-right w-full">
           <h1 className='text-purple text-center md:tracking-wider mb-2 md:text-large lg: text-3xl'>
             <TextGenerateEffect
-              words={`Hello! I'm Mohamad Alkhani, a Full Stack Software Developer from Canada that is looking for new opportunities!`} />
+              words={`Hello! I'm John Doe, a Full Stack Software Developer and Computer Science Graduate from Canada that is looking for new opportunities!`} />
           </h1>
           
           <AnimatedTooltip items={tooltipItems}  /> 
         </div>
-          <a href='#Projects'>
+          <a href='#projects'>
             <MagicButton
                 title="View my Projects"
                 icon={<VscRocket className="bg-black-100 text-green h-4 w-4" />}
