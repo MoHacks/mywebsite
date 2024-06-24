@@ -44,6 +44,7 @@ const config = {
         },
         purple: "#CBACF9",
         green: "#84ECA4",
+        stronggreen: "#16fd44",
         lightpurple: "#f5f2fd",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
