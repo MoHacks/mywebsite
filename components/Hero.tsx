@@ -81,7 +81,7 @@ import { TextGenerateEffect } from './ui/text-generate-effect';
 import { MagicButton } from './ui/MagicButton';
 import { VscRocket } from 'react-icons/vsc';
 import  {AnimatedTooltip}  from './ui/animated-tooltip';
-import canada from './canada.png';
+import canada from '../public/canada.png';
 
 // Define the items array
 const tooltipItems = [
