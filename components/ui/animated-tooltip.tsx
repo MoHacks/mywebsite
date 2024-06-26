@@ -101,7 +101,7 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
-import { useMediaQuery } from '@react-hook/media-query'; // Import media query hook
+import {useMediaQuery} from '@react-hook/media-query'; // Import media query hook
 
 export const AnimatedTooltip = ({
   items,

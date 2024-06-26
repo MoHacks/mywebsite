@@ -1,28 +1,33 @@
-import React from 'react';
-import { ContainerScroll } from './ui/container-scroll-animation';
-import Image from 'next/image';
-import linear from '../public/linear.webp';
-import canada from '../public/canada.png';
+import Image from "next/image";
+import { ContainerScroll } from "./ui/container-scroll-animation";
 export const WorkExperience = () => {
   return (
-    <div className="flex flex-col overflow-hidden id=" id="experience">
+    <div className="flex flex-col pt-20 mt-10" id="experience">
       <ContainerScroll
         titleComponent={
           <h1 className="text-4xl font-semibold text-black dark:text-purple">
-            <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-              Work Experience
+            <span className="text-4xl md:text-[3rem] font-bold mt-1 leading-none">
+              Work Experience (3.5 years)
             </span>
           </h1>
         }
       >
         <Image
-          src="/linear.webp"  // Adjusted the src prop
+          src="/combined_image3.png" // Adjusted the src prop
           alt="linear"
-          height={1500}  // Adjusted to numeric value
-          width={500}  // Adjusted to numeric value
+          height={500} // Adjusted to numeric value
+          width={800} // Adjusted to numeric value
           className="mx-auto rounded-2xl object-cover h-full object-left-top"
           draggable={false}
         />
+        {/* <Image
+          src="/k.png"  // Adjusted the src prop
+          alt="linear"
+          height={500}  // Adjusted to numeric value
+          width={800}  // Adjusted to numeric value
+          className="mx-auto rounded-2xl object-cover h-full object-left-top"
+          draggable={false} 
+          /> */}
       </ContainerScroll>
     </div>
   );
@@ -30,7 +35,6 @@ export const WorkExperience = () => {
 
 export default WorkExperience;
 
- 
 export const users = [
   {
     name: "Manu Arora",
@@ -147,4 +151,3 @@ export const users = [
     badge: "Developer",
   },
 ];
-    
