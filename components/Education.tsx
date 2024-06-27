@@ -20,8 +20,7 @@ export const Education = () => {
               src="/university.png"
               height="1000"
               width="700"
-              className="h-auto object-cover rounded-xl group-hover/card:shadow-xl 
-                        w-[8rem] sm:w-[10rem] md:w-[12rem] lg:w-[14rem] xl:w-[16rem]"
+              className="w-[8rem] sm:w-[10rem] md:w-[12rem] lg:w-[14rem] xl:w-[16rem]"
               style={{ marginLeft: '20%' }}       
               alt="university image"
             />
