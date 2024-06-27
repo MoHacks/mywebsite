@@ -15,8 +15,8 @@ export function MyProjects() {
         <div className="py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8 text-stronggreen text-center">
             
             <Card 
-              icon={<AceternityIcon order="Python FastAPI Backend"/>}
-              desc="An extensive Python API Project"
+              icon={<AceternityIcon order="Python FastAPI Social Media Backend"/>}
+              desc="A robust Python API for Social Media"
               techused="Python, Pytest, FastAPI, SQL, Postman, Docker">
               <CanvasRevealEffect
                 animationSpeed={3}

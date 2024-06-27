@@ -6,6 +6,7 @@ import { navItems } from '../data/index';
 import MyProjects from "@/components/MyProjects";
 import React from "react";
 import { WorkExperience } from "@/components/WorkExperience";
+import { Education } from "@/components/Education";
 
 export default function Home() {
   return (
@@ -15,8 +16,8 @@ export default function Home() {
         <Hero />
         <WorkExperience />
         <MyProjects />
-        <Grid />
-        <h1>Hello, Portfolio!</h1>
+        <Education />
+        {/* <Grid /> */}
       </div>
     </main>
   );
