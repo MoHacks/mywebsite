@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, ThreeDCardItem } from "./ui/3d-card";
-import Link from "next/link";
+
 
 export const Education = () => {
   return (
@@ -15,6 +15,7 @@ export const Education = () => {
             translateZ="100"
             className="flex justify-start w-full mt-4"
           > */}
+          
             <Image
               src="/university.png"
               height="1000"
@@ -24,6 +25,7 @@ export const Education = () => {
               style={{ marginLeft: '20%' }}       
               alt="university image"
             />
+          
             {/* Text on the right */}
             <div className="ml-5 flex-grow flex items-center justify-center">
                 <div>

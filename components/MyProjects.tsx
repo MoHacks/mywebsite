@@ -4,7 +4,8 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import { title } from "process";
- 
+import Link from "next/link";
+
 export function MyProjects() {
   return (
     <section id="projects">
@@ -14,25 +15,29 @@ export function MyProjects() {
         </h1>
         <div className="py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8 text-stronggreen text-center">
             
-            <Card 
-              icon={<AceternityIcon order="Python FastAPI Social Media Backend"/>}
-              desc="A robust Python API for Social Media"
-              techused="Python, Pytest, FastAPI, SQL, Postman, Docker">
-              <CanvasRevealEffect
-                animationSpeed={3}
-                containerClassName="bg-sky-600"
-                colors={[[125, 211, 252]]}
-              />
-            </Card>
-            <Card 
-              icon={<AceternityIcon order="Simple PathFinding Algorithm Visualizer"/>}
-              desc="A simple pathfinding maze visualizer"
-              techused="React, HTML, CSS, Javascript">
-              <CanvasRevealEffect
-                animationSpeed={5.1}
-                containerClassName="bg-emerald-600"
-              />
-            </Card>
+            <Link href="https://www.google.com" target="_blank" passHref>
+              <Card 
+                icon={<AceternityIcon order="Python FastAPI Social Media Backend"/>}
+                desc="A robust Python API for Social Media"
+                techused="Python, Pytest, FastAPI, SQL, Postman, Docker">
+                <CanvasRevealEffect
+                  animationSpeed={3}
+                  containerClassName="bg-sky-600"
+                  colors={[[125, 211, 252]]}
+                />
+              </Card>
+            </Link>
+            <Link href="https://mohacks.github.io/pathfinding-2d/" target="_blank" passHref>
+              <Card 
+                icon={<AceternityIcon order="Simple PathFinding Algorithm Visualizer"/>}
+                desc="A simple pathfinding maze visualizer"
+                techused="React, HTML, CSS, Javascript">
+                <CanvasRevealEffect
+                  animationSpeed={5.1}
+                  containerClassName="bg-emerald-600"
+                />
+              </Card>
+            </Link>
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ContainerScroll } from "./ui/container-scroll-animation";
 export const WorkExperience = () => {
   return (
-    <div className="flex flex-col pt-20 mt-10" id="experience">
+    <div className="flex flex-col pt-20 mt-20" id="experience">
       <ContainerScroll
         titleComponent={
           <h1 className="text-4xl font-semibold text-black dark:text-purple">
