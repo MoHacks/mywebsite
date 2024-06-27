@@ -1,96 +1,54 @@
-// "use client";
- 
-// import Image from "next/image";
-// import React from "react";
-// import { CardBody, CardContainer, threeDCardItem } from "./ui/3d-card";
-// import Link from "next/link";
-
-// export const Education = () => {
-//   return (
-//     <section id="education">
-//         <h1 className="heading text-purple pt-20 mt-20">
-//             Education
-//         </h1>
-//         <CardContainer className="inter-var">
-//             <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[60rem] h-auto rounded-xl p-6 border  ">
-//                 <threeDCardItem
-//                 translateZ="50"
-//                 className="text-xl font-bold text-neutral-600 dark:text-white"
-//                 >
-                
-//                 </threeDCardItem>
-//                 <threeDCardItem
-//                 as="p"
-//                 translateZ="60"
-//                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-//                 >
-                
-//                 </threeDCardItem>
-//                 <threeDCardItem translateZ="100" className="w-full mt-4">
-//                 <Image
-//                     src="/university.png"
-//                     height="1000"
-//                     width="1000"
-//                     className="h-100 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-//                     alt="thumbnail"
-//                 />
-//                 </threeDCardItem>
-//             </CardBody>
-//         </CardContainer>
-//     </section>
-//   )
-// }
-
 "use client";
- 
+
 import Image from "next/image";
 import React from "react";
-import { CardBody, CardContainer, threeDCardItem } from "./ui/3d-card";
+import { CardBody, CardContainer, ThreeDCardItem } from "./ui/3d-card";
 import Link from "next/link";
 
 export const Education = () => {
   return (
-    <section id="education" className="py-20">
+    <section id="education" className="py-20" >
       <h1 className="heading text-purple">Education</h1>
-      <CardContainer className="inter-var">
-        <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[60rem] h-auto rounded-xl p-6 border">
-          <threeDCardItem
+      <CardContainer className="inter-var border-green" >
+        <CardBody className="bg-[#b3a38e] dark:border-green/[0.9] relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  border-black/[0.1] w-auto sm:w-[40rem] h-auto rounded-xl p-6 border">
+          {/* <threeDCardItem
             translateZ="100"
             className="flex justify-start w-full mt-4"
-          >
+          > */}
             <Image
               src="/university.png"
               height="1000"
               width="700"
-              className="h-auto w-auto object-cover rounded-xl group-hover/card:shadow-xl"
-              style={{ width: '11rem' }}
+              className="h-auto object-cover rounded-xl group-hover/card:shadow-xl 
+                        w-[8rem] sm:w-[10rem] md:w-[12rem] lg:w-[14rem] xl:w-[16rem]"
+              style={{ marginLeft: '20%' }}       
               alt="university image"
             />
             {/* Text on the right */}
-            <div className="ml-4 flex-grow flex items-center">
-                
+            <div className="ml-5 flex-grow flex items-center justify-center">
                 <div>
-                    <threeDCardItem
-                        translateZ="50"
-                        className="text-xl font-bold text-neutral-600 dark:text-black"
+                    <ThreeDCardItem
                     >
                         2015 - 2020
-                    </threeDCardItem>
+                    </ThreeDCardItem>
                     <h2 className="text-xl font-bold text-neutral-600 dark:text-black">
                         Bachelor of Computer Science, Honours
                     </h2>
-                    <h2 className="text-l font-bold text-neutral-600 dark:text-black">
+                    <h2 className="text-xl font-bold text-neutral-600 dark:text-black">
+                        Conc. in Biomedical Computing
+                    </h2>
+                    <h2 className="text-xl font-bold text-neutral-600 dark:text-black">
                         Minor in Mathematics
                     </h2>
                     <p className="font-bold text-sm dark:text-black">
-                        Cumulative GPA: 10.41/12 (A)
+                        Cumulative GPA: 10.41/12 (High Distinction)
                     </p>
                     <p className="font-bold text-sm dark:text-black">
                         Dean's List Recipient
                     </p>
-                    
-                </div></div>
-          </threeDCardItem>
+                </div>
+            </div>
+          {/* </threeDCardItem> */}
         </CardBody>
       </CardContainer>
     </section>

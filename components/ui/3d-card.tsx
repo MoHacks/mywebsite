@@ -95,7 +95,7 @@ export const CardBody = ({
   );
 };
 
-export const threeDCardItem = ({
+export const ThreeDCardItem = ({
   as: Tag = "div",
   children,
   className,

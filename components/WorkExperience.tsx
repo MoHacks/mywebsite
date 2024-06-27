@@ -7,7 +7,7 @@ export const WorkExperience = () => {
         titleComponent={
           <h1 className="text-4xl font-semibold text-black dark:text-purple">
             <span className="text-4xl md:text-[3rem] font-bold mt-1 leading-none">
-              Work Experience (3.5 years)
+              Work Experience
             </span>
           </h1>
         }
