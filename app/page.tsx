@@ -1,8 +1,6 @@
-import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { navItems } from '../data/index';
-// import MyProjects from '../components/MyProjects';
 import MyProjects from "@/components/MyProjects";
 import React from "react";
 import { WorkExperience } from "@/components/WorkExperience";
@@ -17,7 +15,6 @@ export default function Home() {
         <WorkExperience />
         <MyProjects />
         <Education />
-        {/* <Grid /> */}
       </div>
     </main>
   );

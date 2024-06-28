@@ -3,7 +3,7 @@ import React from "react";
  
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
-import { title } from "process";
+import { technologies } from "@/data";
 import Link from "next/link";
 
 export function MyProjects() {
@@ -15,11 +15,11 @@ export function MyProjects() {
         </h1>
         <div className="py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8 text-stronggreen text-center">
             
-            <Link href="https://www.google.com" target="_blank" passHref>
+            <Link href="https://github.com/MoHacks/Python-CRUD-SocialMedia-Backend-API" target="_blank" passHref>
               <Card 
-                icon={<AceternityIcon order="Python FastAPI Social Media Backend"/>}
-                desc="A robust Python API for Social Media"
-                techused="Python, Pytest, FastAPI, SQL, Postman, Docker">
+                icon={<AceternityIcon order="Project 1"/>}
+                desc="A robust CRUD Python Backend using FastAPI for Social Media"
+                techused="Python, FastAPI, SQL, Postman, Docker">
                 <CanvasRevealEffect
                   animationSpeed={3}
                   containerClassName="bg-sky-600"
@@ -29,7 +29,7 @@ export function MyProjects() {
             </Link>
             <Link href="https://mohacks.github.io/pathfinding-2d/" target="_blank" passHref>
               <Card 
-                icon={<AceternityIcon order="Simple PathFinding Algorithm Visualizer"/>}
+                icon={<AceternityIcon order="Project 2"/>}
                 desc="A simple pathfinding maze visualizer"
                 techused="React, HTML, CSS, Javascript">
                 <CanvasRevealEffect
@@ -39,6 +39,23 @@ export function MyProjects() {
               </Card>
             </Link>
         </div>
+        <h1 className="heading text-white md:text-3xl pb-10">
+          Technologies Used
+        </h1>
+        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
+          {technologies.map((tech) => (
+            <React.Fragment key={tech.id}>
+              <div className="flex md:max-w-60 max-w-32 gap-2">
+                <img
+                  src={tech.img}
+                  alt={tech.name}
+                  className="md:w-auto w-5 md:h-10"
+                />
+              </div>
+            </React.Fragment>
+          ))}
+        </div>
+        
       </div>
     </section>
   );
@@ -85,14 +102,14 @@ const Card = ({
           {icon}
         </div>
         <h2 className="dark:text-black text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4 font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200"
-            style={{ color: "White", fontSize: "2rem" }}>
+            style={{ color: "#ff6767", fontSize: "2rem" }}>
           {desc}
         </h2>
         <p
           className="text-sm opacity-0 group-hover/canvas-card:opacity-100
          relative z-10 mt-4 group-hover/canvas-card:text-white text-center
          group-hover/canvas-card:-translate-y-2 transition duration-200"
-          style={{ color: "Black", fontWeight: "bold", fontSize: "1rem" }}
+          style={{ color: "#9c8eff", fontWeight: "bold", fontSize: "1rem" }}
         >
           {techused}
         </p>

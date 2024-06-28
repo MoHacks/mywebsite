@@ -11,11 +11,6 @@ export const Education = () => {
       <h1 className="heading text-purple">Education</h1>
       <CardContainer className="inter-var border-green" >
         <CardBody className="bg-[#b3a38e] dark:border-green/[0.9] relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  border-black/[0.1] w-auto sm:w-[40rem] h-auto rounded-xl p-6 border">
-          {/* <threeDCardItem
-            translateZ="100"
-            className="flex justify-start w-full mt-4"
-          > */}
-          
             <Image
               src="/university.png"
               height="1000"
@@ -28,8 +23,7 @@ export const Education = () => {
             {/* Text on the right */}
             <div className="ml-5 flex-grow flex items-center justify-center">
                 <div>
-                    <ThreeDCardItem
-                    >
+                    <ThreeDCardItem>
                         2015 - 2020
                     </ThreeDCardItem>
                     <h2 className="text-xl font-bold text-neutral-600 dark:text-black">
@@ -49,7 +43,6 @@ export const Education = () => {
                     </p>
                 </div>
             </div>
-          {/* </threeDCardItem> */}
         </CardBody>
       </CardContainer>
     </section>
