@@ -39,7 +39,7 @@ export const Education = () => {
                         Cumulative GPA: 10.41/12 (High Distinction)
                     </p>
                     <p className="font-bold text-sm dark:text-black">
-                        Dean's List Recipient
+                        Dean&apos;s List Recipient
                     </p>
                 </div>
             </div>
