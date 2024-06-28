@@ -13,8 +13,8 @@ export const Contact = () => {
         </h1>
         <a href="mailto:mohamad_alkhani@hotmail.com">
           <MagicButton
-            title="Keep in touch by email"
-            icon={<VscRocket fill='red'/>}
+            title="Let us connect by email!"
+            icon={<VscRocket fill='cyan'/>}
             position="right"
           />
         </a>
