@@ -13,7 +13,7 @@ export const WorkExperience = () => {
         }
       >
         <Image
-          src="public/combined_image3.png" // Adjusted the src prop
+          src="/public/combined_image3.png" // Adjusted the src prop
           alt="linear"
           height={500} // Adjusted to numeric value
           width={800} // Adjusted to numeric value
