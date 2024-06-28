@@ -3,14 +3,14 @@ import React from "react";
  
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
-import { technologies } from "@/data";
+import { technologies } from "../data/index";
 import Link from "next/link";
 
 export function MyProjects() {
   return (
-    <section id="projects">
+    <section id="projects" className="pt-20">
       <div>
-        <h1 className="heading text-purple pt-20 mt-20">
+        <h1 className="heading text-purple pt-40 mt-20">
           Some of My Projects
         </h1>
         <div className="py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8 text-stronggreen text-center">
@@ -47,7 +47,7 @@ export function MyProjects() {
             <React.Fragment key={tech.id}>
               <div className="flex md:max-w-60 max-w-32 gap-2">
                 <img
-                  src={tech.img}
+                  src={tech.img.src}
                   alt={tech.name}
                   className="md:w-auto w-5 md:h-10"
                 />
