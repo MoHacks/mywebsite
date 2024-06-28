@@ -3,7 +3,7 @@ import React from 'react';
 import { useMediaQuery } from '@react-hook/media-query';
 import { TextGenerateEffect } from './ui/text-generate-effect';
 import { MagicButton } from './ui/MagicButton';
-import { VscRocket } from 'react-icons/vsc';
+
 import  {AnimatedTooltip}  from './ui/animated-tooltip';
 import canada from '../public/canada.png';
 
