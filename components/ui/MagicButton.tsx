@@ -24,4 +24,3 @@ export const MagicButton = ({title, icon, position, handleClick} : {
     
   )
 }
-

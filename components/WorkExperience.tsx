@@ -17,7 +17,7 @@ export const WorkExperience = () => {
         <img
           src={combinedimage3.src}
           alt="linear"
-          className="mx-auto rounded-2xl object-cover h-full object-left-top"
+          className="mx-w-full rounded-2xl h-auto"
           draggable={false}
         />
       </ContainerScroll>
