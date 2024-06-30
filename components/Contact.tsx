@@ -52,16 +52,19 @@
 // };
 
 // export default Contact;
-// "use client";
+"use client";
 import React from "react";
 import { ButtonsCard } from "./ui/tailwindcss-buttons";
+import { VscRocket } from "react-icons/vsc"; // Import your desired icon component
 
 export const Contact = () => {
   return (
     <section id="contact" className="pb-20">
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw] text-purple pb-10">Contact</h1>
-        <ButtonsCard/>      
+        <ButtonsCard icon={<VscRocket fill='cyan' style={{ marginLeft: "1rem" }} />}>
+          Let us connect by email!
+        </ButtonsCard>
       </div>
     </section>
   );

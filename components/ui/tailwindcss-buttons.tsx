@@ -30,15 +30,18 @@
 "use client";
 import React, { useState } from "react";
 import { IconClipboard } from "@tabler/icons-react";
-import { cn } from "@/utils/cn";
+import { cn } from "@/utils/cn"; // Ensure to import cn utility if it's used for classNames
 
-export const ButtonsCard = () => {
+export const ButtonsCard = ({ icon, children }: {
+  icon?: React.ReactNode;
+  children?: React.ReactNode;
+}) => {
   const [buttonLabel, setButtonLabel] = useState("Let us connect by email!");
 
   const handleClick = async () => {
     try {
       await navigator.clipboard.writeText("mohamad_alkhani@hotmail.com");
-      setButtonLabel("Email Copied!");
+      setButtonLabel("Copied email!");
       setTimeout(() => setButtonLabel("Let us connect by email!"), 2000); // Reset label after 2 seconds
     } catch (error) {
       console.error("Failed to copy:", error);
@@ -57,10 +60,13 @@ export const ButtonsCard = () => {
           onClick={handleClick}
         >
           {buttonLabel}
+          {icon}
+        
         </button>
       </div>
     </div>
   );
 };
+
 
 
