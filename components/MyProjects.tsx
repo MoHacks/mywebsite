@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export function MyProjects() {
   return (
-    <section id="projects" className="pt-20">
+    <section id="projects" className="py-20 my-20">
       <div>
         <h1 className="heading text-purple pt-40 mt-20">
           Some of My Projects

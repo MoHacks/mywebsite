@@ -28,7 +28,7 @@ const Hero = () => {
 
       <div className="flex justify-left relative my-10 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <div className="flex items-center justify-right w-full">
+          <div className="flex items-center justify-right w-full" style={{ marginBottom: '20rem' }}>
             <h1 className="text-purple text-center md:tracking-wider mb-2 md:text-large lg:text-3xl">
               <TextGenerateEffect words={`Hello! I'm Mohamad Alkhani, a Full Stack Software Developer and Computer Science Graduate from Canada that is looking for new opportunities!`} />
             </h1>
