@@ -83,6 +83,16 @@ export const technologies = [
     name: "spark",
     img: require("../public/spark.png").default,
   },
+  {
+    id: 16,
+    name: "java",
+    img: require("../public/java.png").default,
+  },
+  {
+    id: 17,
+    name: "cpp",
+    img: require("../public/cpp.png").default,
+  },
 ];
 
 
