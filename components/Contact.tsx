@@ -61,9 +61,7 @@ export const Contact = () => {
     <section id="contact" className="pb-20">
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw] text-purple pb-10">Contact</h1>
-        <ButtonsCard>
-          {/* mohamad_alkhani@hotmail.com */}
-        </ButtonsCard>
+        <ButtonsCard/>      
       </div>
     </section>
   );
