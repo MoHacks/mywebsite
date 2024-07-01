@@ -19,7 +19,7 @@ export function MyProjects() {
               <Card 
                 icon={<AceternityIcon order="Project 1"/>}
                 desc="A robust CRUD Python Backend using FastAPI for Social Media"
-                techused="Python, FastAPI, SQL, Postman, Docker">
+                techused="Python, FastAPI, SQLAlchemy, Postman, Docker">
                 <CanvasRevealEffect
                   animationSpeed={3}
                   containerClassName="bg-sky-600"
