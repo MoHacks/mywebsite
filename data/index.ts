@@ -96,6 +96,6 @@ export const navItems = [
     {
       id: 18,
       name: "sqlAlchemy",
-      img: require("../public/sqlalchemy.png").default
+      img: require("../public/sqlAlchemy.png").default
     }
   ];
