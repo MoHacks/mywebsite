@@ -25,9 +25,9 @@ const Hero = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       </div>
 
-      <div className="flex justify-left relative my-10 z-10">
+      <div className="flex justify-left relative z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <div className="flex items-center justify-right w-full" style={{ marginBottom: '20rem' }}>
+           <div className="flex items-center justify-right w-full md:mb-1rem lg:mb-96"> {/*style={{ marginBottom: '15rem' }}> */}
             <h1 className="text-purple text-center md:tracking-wider mb-2 md:text-large lg:text-3xl">
               <TextGenerateEffect words={`Hello! I'm Mohamad Alkhani, a Full Stack Software Developer and Computer Science Graduate from Canada that is looking for new opportunities!`} />
             </h1>

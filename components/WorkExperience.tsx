@@ -1,10 +1,9 @@
-
 import combinedimage3 from "../public/combinedimage3.png";
 import { ContainerScroll } from "./ui/container-scroll-animation";
 
 export const WorkExperience = () => {
   return (
-    <div className="flex flex-col pt-20 mt-20" id="experience">
+    <div className="flex flex-col lg:pt-1 lg:mt-1" id="experience">
       <ContainerScroll
         titleComponent={
           <h1 className="text-4xl font-semibold text-black dark:text-purple">

@@ -8,7 +8,7 @@ import { CardBody, CardContainer, ThreeDCardItem } from "./ui/3d-card";
 
 export const Education = () => {
   return (
-    <section id="education" className="py-20 mt-20" >
+    <section id="education" className="mt-[5rem]">
       <h1 className="heading text-purple">Education</h1>
       <CardContainer className="inter-var border-green" >
         <CardBody className="bg-[#b3a38e] dark:border-green/[0.9] relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  border-black/[0.1] w-auto sm:w-[40rem] h-auto rounded-xl p-6 border">
@@ -16,7 +16,7 @@ export const Education = () => {
               src={combinedimage3.src}
               height="1000"
               width="700"
-              className="w-[8rem] sm:w-[10rem] md:w-[12rem] lg:w-[14rem] xl:w-[16rem]"
+              className="w-[8rem] sm:w-[10rem] md:w-[12rem] lg:w-[14rem] xl:w-[16rem] mt-"
               style={{ marginLeft: '20%' }}       
               alt="university image"
             />

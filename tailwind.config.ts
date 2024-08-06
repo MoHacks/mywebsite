@@ -24,9 +24,19 @@ const config = {
       screens: {
         "2xl": "1400px",
       },
-    }, 
+    },
     //   NOTE: Properties to customize that can be used throughout the project
     extend: {
+      margin: {
+        '15rem': '15rem', // Add custom margin value
+        '1rem': '1rem',
+      },
+      screens: {
+        'sm-up': { 'max': '640px' }, // Custom breakpoint for screens smaller than 768px
+        'md-up': { 'max': '768px' },
+        'md-h-up': { 'max': '850px' },
+        'lg-up': { 'max': '1024px' },
+      },
       colors: {
         black: {
           DEFAULT: "#000",
@@ -42,9 +52,9 @@ const config = {
         blue: {
           "100": "#E4ECFF",
         },
-        beige:"#FAE2D5",
+        beige: "#FAE2D5",
         purple: "#CBACF9",
-        strongpurple:"#9400d3",
+        strongpurple: "#9400d3",
         green: "#84ECA4",
         stronggreen: "#16fd44",
         lightpurple: "#f5f2fd",

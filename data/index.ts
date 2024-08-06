@@ -66,7 +66,7 @@ export const navItems = [
     {
       id: 12,
       name: "argo",
-      img: require("../public/argo.png").default,
+      img: require("../public/argo2.png").default,
     },
     {
       id: 13,

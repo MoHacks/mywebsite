@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
- 
+
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import { technologies } from "../data/index";
@@ -8,39 +8,40 @@ import Link from "next/link";
 
 export function MyProjects() {
   return (
-    <section id="projects" className="py-20 my-20">
+    <section id="projects" className="pt-20 mt-20 md-h-up:pt-0 md-h-up:mt-0">
       <div>
-        <h1 className="heading text-purple pt-40 mt-20">
+        {/* <h1 className="heading text-purple pt-40 mt-20 md-h-up:py-0 md-h-up:my-0"> */}
+        <h1 className="heading text-purple pt-40 mt-40 md-h-up:pt-0 md-h-up:mt-0">
           Some of My Projects
         </h1>
         <div className="py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8 text-stronggreen text-center">
-            
-            <Link href="https://github.com/MoHacks/Python-CRUD-SocialMedia-Backend-API" target="_blank" passHref>
-              <Card 
-                icon={<AceternityIcon order="Project 1"/>}
-                desc="A robust CRUD Python Backend using FastAPI for Social Media"
-                techused="Python, FastAPI, SQLAlchemy, Postman, Docker">
-                <CanvasRevealEffect
-                  animationSpeed={3}
-                  containerClassName="bg-sky-600"
-                  colors={[[125, 211, 252]]}
-                />
-              </Card>
-            </Link>
-            <Link href="https://mohacks.github.io/pathfinding-2d/" target="_blank" passHref>
-              <Card 
-                icon={<AceternityIcon order="Project 2"/>}
-                desc="A simple pathfinding maze visualizer"
-                techused="React, HTML, CSS, Javascript">
-                <CanvasRevealEffect
-                  animationSpeed={5.1}
-                  containerClassName="bg-emerald-600"
-                />
-              </Card>
-            </Link>
+
+          <Link href="https://github.com/MoHacks/Python-CRUD-SocialMedia-Backend-API" target="_blank" passHref>
+            <Card
+              icon={<AceternityIcon order="Project 1" />}
+              desc="A robust CRUD Python Backend using FastAPI for Social Media"
+              techused="Python, FastAPI, SQLAlchemy, Postman, Docker">
+              <CanvasRevealEffect
+                animationSpeed={3}
+                containerClassName="bg-sky-600"
+                colors={[[125, 211, 252]]}
+              />
+            </Card>
+          </Link>
+          <Link href="https://mohacks.github.io/pathfinding-2d/" target="_blank" passHref>
+            <Card
+              icon={<AceternityIcon order="Project 2" />}
+              desc="A simple pathfinding maze visualizer"
+              techused="React, HTML, CSS, Javascript">
+              <CanvasRevealEffect
+                animationSpeed={5.1}
+                containerClassName="bg-emerald-600"
+              />
+            </Card>
+          </Link>
         </div>
         <h1 className="heading text-white md:text-3xl pb-10">
-          Technologies Used
+          Other Technologies Used
         </h1>
         <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
           {technologies.map((tech) => (
@@ -55,7 +56,7 @@ export function MyProjects() {
             </React.Fragment>
           ))}
         </div>
-        
+
       </div>
     </section>
   );
@@ -84,7 +85,7 @@ const Card = ({
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-stronggreen text-black" />
       <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-stronggreen text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-stronggreen text-black" />
- 
+
       <AnimatePresence>
         {hovered && (
           <motion.div
@@ -96,13 +97,13 @@ const Card = ({
           </motion.div>
         )}
       </AnimatePresence>
- 
+
       <div className="relative z-20">
         <div className="text-center group-hover/canvas-card:-translate-y-4 absolute top-[50%] group-hover/canvas-card:opacity-0 transition duration-500 w-full  mx-auto flex items-center justify-center">
           {icon}
         </div>
         <h2 className="dark:text-black text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4 font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200"
-            style={{ color: "#ff6767", fontSize: "2rem" }}>
+          style={{ color: "#ff6767", fontSize: "2rem" }}>
           {desc}
         </h2>
         <p
@@ -117,7 +118,7 @@ const Card = ({
     </div>
   );
 };
- 
+
 const AceternityIcon = ({ order }: { order: string }) => {
   return (
     <>
@@ -144,7 +145,7 @@ const AceternityIcon = ({ order }: { order: string }) => {
     </>
   );
 };
- 
+
 export const Icon = ({ className, ...rest }: any) => {
   return (
     <svg

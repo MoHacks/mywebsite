@@ -59,7 +59,7 @@ import { VscRocket } from "react-icons/vsc"; // Import your desired icon compone
 
 export const Contact = () => {
   return (
-    <section id="contact" className="pb-20">
+    <section id="contact" className="pb-20 mt-[1rem]">
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw] text-purple pb-10">Contact</h1>
         <ButtonsCard icon={<VscRocket fill='cyan' style={{ marginLeft: "1rem" }} />}>
