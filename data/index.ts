@@ -97,5 +97,20 @@ export const navItems = [
       id: 18,
       name: "sqlAlchemy",
       img: require("../public/sqlAlchemy.png").default
+    },
+    {
+      id: 19,
+      name: "pydantic",
+      img: require("public/pydantic.png").default,
+    },
+    {
+      id: 20,
+      name: "mui-material",
+      img: require("public/mui-material.png").default,
+    },
+    {
+      id: 21,
+      name: "tailwindcss",
+      img: require("public/tailwindcss.png").default
     }
   ];

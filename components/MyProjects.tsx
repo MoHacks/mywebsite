@@ -20,7 +20,7 @@ export function MyProjects() {
             <Card
               icon={<AceternityIcon order="Project 1" />}
               desc="A Full-Stack Inventory Management System with Analytics and Dashboard"
-              techused="Python, FastAPI, SQLAlchemy, Pydantic, Alembic, PostgreSQL, React, Mui-Material, tailwindcss">
+              techused="Python, FastAPI, SQLAlchemy, Pydantic, Alembic, PostgreSQL, React, Mui-Material, TailwindCSS">
               <CanvasRevealEffect
                 animationSpeed={3}
                 containerClassName="bg-sky-600"
