@@ -16,11 +16,11 @@ export function MyProjects() {
         </h1>
         <div className="py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8 text-stronggreen text-center">
 
-          <Link href="https://github.com/MoHacks/Python-CRUD-SocialMedia-Backend-API" target="_blank" passHref>
+          <Link href="https://inventory-management-system-1-cenc.onrender.com/" target="_blank" passHref>
             <Card
               icon={<AceternityIcon order="Project 1" />}
-              desc="A robust CRUD Python Backend using FastAPI for Social Media"
-              techused="Python, FastAPI, SQLAlchemy, Postman, Docker">
+              desc="A Full-Stack Inventory Management System with Analytics and Dashboard"
+              techused="Python, FastAPI, SQLAlchemy, Pydantic, Alembic, PostgreSQL, React, Mui-Material">
               <CanvasRevealEffect
                 animationSpeed={3}
                 containerClassName="bg-sky-600"
