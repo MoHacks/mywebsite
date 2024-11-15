@@ -105,7 +105,7 @@ export const navItems = [
     },
     {
       id: 20,
-      name: "mui-material",
+      name: "material-ui",
       img: require("../public/material-ui.png").default,
     },
     {
